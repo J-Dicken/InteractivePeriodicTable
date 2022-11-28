@@ -1,0 +1,192 @@
+body{
+	font-family: Arial;
+	background:lightgray;
+}
+
+td{
+	width:70px;
+	height:70px;
+	border:3px ridge black;
+	text-align:center;
+
+}
+
+table{
+	width:100%;
+}
+
+table h1{
+	font-size:20px;
+	padding:0px;
+	margin:0px;
+}
+
+table h2{
+	font-size:12px;
+	padding:0px;
+	margin:0px;
+}
+
+table h3{
+	font-size:8px;
+	padding:0px;
+	margin:0px;
+	font-style:italic;
+}
+
+
+.whiteSpace{
+	border:none;
+}
+
+.whiteSpace h1{
+	font-size:32px;
+}
+
+.alkaliMetal{
+	border-color:red;
+}
+
+#alkaliMetal{
+	background:red;
+}
+
+.alkaliMetal:hover{
+	background:red;
+	
+}
+
+.alkalineEarth{
+	border-color:orange;
+}
+
+#alkalineEarth{
+	background:orange;
+}
+
+.alkalineEarth:hover{
+	background:orange;
+}
+
+.transitionMetal{
+	border-color:yellow;
+}
+
+#transitionMetal{
+	background:yellow;
+}
+
+.transitionMetal:hover{
+	background:yellow;
+}
+
+.basicMetal{
+	border-color:lime;
+}
+
+#basicMetal{
+	background:lime;
+}
+
+.basicMetal:hover{
+	background:lime;
+}
+
+.metalloid{
+	border-color:darkgreen;
+}
+
+#metalloid{
+	background:darkgreen;
+}
+
+.metalloid:hover{
+	background:darkgreen;
+}
+
+.nonMetal{
+	border-color:lightblue;
+}
+
+#nonMetal{
+	background:lightblue;
+}
+
+.nonMetal:hover {
+	background:lightblue;
+}
+
+.halogen{
+	border-color:blue;
+}
+
+#halogen{
+	background:blue;
+}
+
+.halogen:hover{
+	background:blue;
+}
+
+.nobleGas{
+	border-color:purple;
+}
+
+#nobleGas{
+	background:purple;
+}
+
+.nobleGas:hover{
+	background:purple;
+}
+
+.lanthanide{
+	border-color:#FF00FF;
+}
+
+#lanthanide{
+	background:#FF00FF;
+}
+
+.lanthanide:hover{
+	background:#FF00FF;
+}
+
+.actinide{
+	border-color:#FFCCCC;
+}
+
+#actinide{
+	background:#FFCCCC;
+}
+
+.actinide:hover{
+	background:#FFCCCC;
+}
+
+.key{
+	border:none;
+	text-align:left;
+	padding-left:5px;
+}
+
+.colorKey{
+	width:35px;
+	height:35px;
+	border:none;
+	background	
+}
+
+.btn{
+	background:none;
+	border:none;
+	width:100%;
+	height:100%;	
+}
+
+.btn:active{
+	border:none;
+}
+
+
+

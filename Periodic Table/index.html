@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Periodic Table of Elements</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('1','H','Hydrogen','1.008','nonMetal')">
+					<h1>H</h1>
+				</button>
+			</td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace" colspan="5">
+				<h1>Periodic Table of Elements</h1>
+			</td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('2','He','Helium','4.003','nobleGas')">
+					<h1>He</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="alkaliMetal">
+				<button class="btn" onClick="display('3','Li','Lithium','6.941','alkaliMetal')">
+					<h1>Li</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('4','Be','Beryllium','9.012','alkalineEarth')">
+					<h1>Be</h1>
+				</button>	
+			</td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="alkaliMetal" class="colorKey"><h3>Alkali Metal</h3></td>
+					</tr>
+					<tr>
+						<td id="alkalineEarth" class="colorKey"><h3>Alkaline Earth</h3></td>
+					</tr>
+				</table>
+			</td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="transitionMetal" class="colorKey"><h3>Transition Metal</h3></td>
+					</tr>
+					<tr>
+						<td id ="basicMetal" class="colorKey"><h3>Basic Metal</h3></td>
+					</tr>
+				</table>
+			</td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="metalloid" class="colorKey"><h3>Metalloid</h3></td>
+					</tr>
+					<tr>
+						<td id="nonMetal" class="colorKey"><h3>Non Metal</h3></td>
+					</tr>
+				</table>
+			</td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="halogen" class="colorKey"><h3>Halogen</h3></td>
+					</tr>
+					<tr>
+						<td id="nobleGas" class="colorKey"><h3>Noble Gas</h3></td>
+					</tr>
+				</table>
+			</td>
+			<td id="interDisplay" rowspan="2" colspan="2">
+				<a id="wikiSearch" href="#" target="_blank">
+					<button class="btn" title="Click for Wiki Article">
+						<h2 id="atomicNumber"></h2>
+						<h1 id="chemicalSymbol"></h1>
+						<h3 id="name">Click an element for more info</h3>
+						<h2 id="atomicMass"></h2>
+					</button>
+				</a>
+			</td>
+			<td class="key" rowspan="2" colspan="3">
+				<h2>Atomic Number</h2>
+				<h2>Chemical Symbol</h2>
+				<h2>Name</h2>
+				<h2>Atomic Mass</h2>
+			</td>
+			<td class="whiteSpace"></td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('5','B','Boron','10.811','metalloid')">
+					<h1>B</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('6','C','Carbon','12.011','nonMetal')">
+					<h1>C</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('7','N','Nitrogen','14.007','nonMetal')">
+					<h1>N</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('8','O','Oxygen','15.999','nonMetal')">
+					<h1>O</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('9','F','Fluorine','18.998','halogen')">
+					<h1>F</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('10','Ne','Neon','20.180','nobleGas')">
+					<h1>Ne</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class ="alkaliMetal">
+				<button class="btn" onClick="display('11','Na','Sodium','22.990','alkaliMetal')">
+					<h1>Na</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('12','Mg','Magnesium','24.305','alkalineEarth')">
+					<h1>Mg</h1>
+				</button>
+			</td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="lanthanide" class="colorKey"><h3>Lanthanide</h3></td>
+					</tr>
+					<tr>
+						<td class="whiteSpace colorKey"></td>
+					</tr>
+				</table>
+			</td>
+			<td class="whiteSpace">
+				<table>
+					<tr>
+						<td id="actinide" class="colorKey"><h3>Actinide</h3></td>
+					</tr>
+					<tr>
+						<td class="whiteSpace colorKey"></td>
+					</tr>
+				</table>
+			</td>
+			<td class="whiteSpace"></td>
+			<td class="whiteSpace"></td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('13','Al','Aluminium','26.982','basicMetal')">
+					<h1>Al</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('14','Si','Silicon','28.086','metalloid')">
+					<h1>Si</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('15','P','Phosphorus','30.974','nonMetal')">
+					<h1>P</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('16','S','Sulfur','32.066','nonMetal')">
+					<h1>S</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('17','Cl','Chlorine','35.453','halogen')">
+					<h1>Cl</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('18','Ar','Argon','39.948','nobleGas')">
+					<h1>Ar</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="alkaliMetal">
+				<button class="btn" onClick="display('19','K','Potassium','39.098','alkaliMetal')">
+					<h1>K</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('20','Ca','Calcium','40.078','alkalineEarth')">
+					<h1>Ca</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('21','Sc','Scandium','44.956','transitionMetal')">
+					<h1>Sc</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('22','Ti','Titanium','47.867','transitionMetal')">
+					<h1>Ti</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('23','V','Vanadium','50.942','transitionMetal')">
+					<h1>V</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('24','Cr','Chromium','51.996','transitionMetal')">
+					<h1>Cr</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('25','Mn','Manganese','54.938','transitionMetal')">
+					<h1>Mn</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('26','Fe','Iron','55.845','transitionMetal')">
+					<h1>Fe</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('27','Co','Cobalt','58.933','transitionMetal')">
+				<h1>Co</h1>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('28','Ni','Nickel','58.693','transitionMetal')">
+					<h1>Ni</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('29','Cu','Copper','63.546','transitionMetal')">
+					<h1>Cu</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('30','Zn','Zinc','65.38','transitionMetal')">
+					<h1>Zn</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('31','Ga','Gallium','69.723','basicMetal')">
+					<h1>Ga</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('32','Ge','Germanium','72.631','metalloid')">
+					<h1>Ge</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('33','As','Arsenic','74.922','metalloid')">
+					<h1>As</h1>
+				</button>
+			</td>
+			<td class="nonMetal">
+				<button class="btn" onClick="display('34','Se','Selenium','78.971','nonMetal')">
+					<h1>Se</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('35','Br','Bromine','79.904','halogen')">
+					<h1>Br</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('36','Kr','Krypton','84.798','nobleGas')">
+					<h1>Kr</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class ="alkaliMetal">
+				<button class="btn" onClick="display('37','Rb','Rubidium','85.468','alkaliMetal')">
+					<h1>Rb</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('38','Sr','Strontium','87.62','alkalineEarth')">
+					<h1>Sr</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('39','Y','Yttrium','88.906','transitionMetal')">
+					<h1>Y</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('40','Zr','Zirconium','91.224','transitionMetal')">
+					<h1>Zr</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('41','Nb','Niobium','92.906','transitionMetal')">
+					<h1>Nb</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('42','Mo','Molybdenum','95.95','transitionMetal')">
+					<h1>Mo</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('43','Tc','Technetium','98.907','transitionMetal')">
+					<h1>Tc</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('44','Ru','Ruthenium','101.07','transitionMetal')">
+					<h1>Ru</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('45','Rh','Rhodium','102.906','transitionMetal')">
+					<h1>Rh</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('46','Pd','Palladium','106.42','transitionMetal')">
+					<h1>Pd</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('47','Ag','Silver','107.868','transitionMetal')">
+					<h1>Ag</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('48','Cd','Cadmium','112.414','transitionMetal')">
+					<h1>Cd</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('49','In','Indium','114.818','basicMetal')">
+					<h1>In</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('50','Sn','Tin','118.711','basicMetal')">
+					<h1>Sn</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('51','Sb','Antimony','121.760','metalloid')">
+					<h1>Sb</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('52','Te','Tellurium','127.6','metalloid')">
+					<h1>Te</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('53','I','Iodine','126.904','halogen')">
+					<h1>I</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('54','Xe','Xenon','131.294','nobleGas')">
+					<h1>Xe</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class ="alkaliMetal">
+				<button class="btn" onClick="display('55','Cs','Caesium','132.9','alkaliMetal')">
+					<h1>Cs</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('56','Ba','Barium','137.3','alkalineEarth')">
+					<h1>Ba</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<h2>57-71</h2>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('72','Hf','Hafnium','178.5','transitionMetal')">
+					<h1>Hf</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('73','Ta','Tantalum','180.9','transitionMetal')">
+					<h1>Ta</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('74','W','Tungsten','183.8','transitionMetal')">
+					<h1>W</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('75','Re','Rhenium','186.2','transitionMetal')">
+					<h1>Re</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('76','Os','Osmium','190.2','transitionMetal')">
+					<h1>Os</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('77','Ir','Iridium','192.2','transitionMetal')">
+					<h1>Ir</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('78','Pt','Platinum','195.1','transitionMetal')">
+					<h1>Pt</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('79','Au','Gold','197.0','transitionMetal')">
+					<h1>Au</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('80','Hg','Mercury','200.6','transitionMetal')">
+					<h1>Hg</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('81','Tl','Thallium','204.4','basicMetal')">
+					<h1>Tl</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('82','Pb','Lead','207.2','basicMetal')">
+					<h1>Pb</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('83','Bi','Bismuth','209.0','metalloid')">
+					<h1>Bi</h1>
+				</button>
+			</td>
+			<td class="metalloid">
+				<button class="btn" onClick="display('84','Po','Polonium','208.982','metalloid')">
+					<h1>Po</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('85','At','Astatine','210','halogen')">
+					<h1>At</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('86','Rn','Radon','222','nobleGas')">
+					<h1>Rn</h1>
+				</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td class ="alkaliMetal">
+				<button class="btn" onClick="display('87','Fr','Francium','223','alkaliMetal')">
+					<h1>Fr</h1>
+				</button>
+			</td>
+			<td class="alkalineEarth">
+				<button class="btn" onClick="display('88','Ra','Radium','226','alkalineEarth')">
+					<h1>Ra</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<h2>89-103</h2>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('104','Rf','Rutherfordium','261','transitionMetal')">
+					<h1>Rf</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('105','Db','Dubnium','262','transitionMetal')">
+					<h1>Db</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('106','Sg','Seaborgium','266','transitionMetal')">
+					<h1>Sg</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('107','Bh','Bohrium','264','transitionMetal')">
+					<h1>Bh</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('108','Hs','Hassium','277','transitionMetal')">
+					<h1>Hs</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('109','Mt','Meitnerium','268','transitionMetal')">
+					<h1>Mt</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('110','Ds','Darmstadtium','271','transitionMetal')">
+					<h1>Ds</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('111','Rg','Roentgenium','272','transitionMetal')">
+					<h1>Rg</h1>
+				</button>
+			</td>
+			<td class="transitionMetal">
+				<button class="btn" onClick="display('112','Cn','Copernicium','285','transitionMetal')">
+					<h1>Cn</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('113','Nh','Nihonium','286','basicMetal')">
+					<h1>Nh</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('114','Fl','Flerovium','289','basicMetal')">
+					<h1>Fl</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('115','Mc','Moscovium','286','basicMetal')">
+					<h1>Mc</h1>
+				</button>
+			</td>
+			<td class="basicMetal">
+				<button class="btn" onClick="display('116','Lv','Livermorium','293','basicMetal')">
+					<h1>Lv</h1>
+				</button>
+			</td>
+			<td class="halogen">
+				<button class="btn" onClick="display('117','Ts','Tennessine','294','halogen')">
+					<h1>Ts</h1>
+				</button>
+			</td>
+			<td class="nobleGas">
+				<button class="btn" onClick="display('118','Og','Oganesson','294','nobleGas')">
+					<h1>Og</h1></td>
+				</button>
+		</tr>
+	</table>
+
+	<br>
+	
+	<table>
+		<tr>
+			<td class="whiteSpace"></td>
+			<td class="lanthanide">
+				<h3>Lanthanide Series</h3>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('57','La','Lanthanum','138.905','lanthanide')">
+					<h1>La</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('58','Ce','Cerium','140.116','lanthanide')">
+					<h1>Ce</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('59','Pr','Praseodymium','140.908','lanthanide')">
+					<h1>Pr</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('60','Nd','Neodymium','144.243','lanthanide')">
+					<h1>Nd</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('61','Pm','Promethium','114.913','lanthanide')">
+					<h1>Pm</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('62','Sm','Samarium','150.36','lanthanide')">
+					<h1>Sm</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('63','Eu','Europium','151.964','lanthanide')">
+					<h1>Eu</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('64','Gd','Gadolinium','157.25','lanthanide')">
+					<h1>Gd</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('65','Tb','Terbium','158.925','lanthanide')">
+					<h1>Tb</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('66','Dy','Dysprosium','162.500','lanthanide')">
+					<h1>Dy</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('67','Ho','Holmium','164.930','lanthanide')">
+					<h1>Ho</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('68','Er','Erbium','167.259','lanthanide')">
+					<h1>Er</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('69','Tm','Thulium','168.934','lanthanide')">
+					<h1>Tm</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('70','Yb','Ytterbium','173.055','lanthanide')">
+					<h1>Yb</h1>
+				</button>
+			</td>
+			<td class="lanthanide">
+				<button class="btn" onClick="display('71','Lu','Lutetium','174.967','lanthanide')">
+					<h1>Lu</h1>
+				</button>
+			</td>
+			<td class="whiteSpace"></td>
+		</tr>
+
+		<tr>
+			<td class="whiteSpace"></td>
+			<td class="actinide">
+				<h3>Actinide Series</h3>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('89','Ac','Actinium','227','actinide')">
+					<h1>Ac</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('90','Th','Thorium','232.0','actinide')">
+					<h1>Th</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('91','Pa','Protactinium','231','actinide')">
+					<h1>Pa</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('92','U','Uranium','238.1','actinide')">
+					<h1>U</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('93','Np','Neptunium','237','actinide')">
+					<h1>Np</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('94','Pu','Plutonium','242','actinide')">
+					<h1>Pu</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('95','Am','Americium','243','actinide')">
+					<h1>Am</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('96','Cm','Curium','247','actinide')">
+					<h1>Cm</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('97','Bk','Berkelium','245','actinide')">
+					<h1>Bk</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('98','Cf','Californium','251','actinide')">
+					<h1>Cf</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('99','Es','Einsteinium','254','actinide')">
+					<h1>Es</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('100','Fm','Fermium','253','actinide')">
+					<h1>Fm</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('101','Md','Mendeleevium','256','actinide')">
+					<h1>Md</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('102','No','Nobelium','254','actinide')">
+					<h1>No</h1>
+				</button>
+			</td>
+			<td class="actinide">
+				<button class="btn" onClick="display('103','Lr','Lawrencium','257','actinide')">
+					<h1>Lr</h1>
+				</button>
+			</td>
+			<td class="whiteSpace"></td>
+		</tr>
+	</table>
+</body>
+</html>
